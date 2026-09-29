@@ -7,9 +7,7 @@ export type ContactFormPayload = {
   message: FormDataEntryValue | null
 }
 
-const contactApiBaseUrl =  import.meta.env.VITE_CONTACTAPI_DEVURL || import.meta.env.VITE_CONTACTAPI_PRODURL;
-
-// const contactApiBaseUrl = import.meta.env.VITE_CONTACTAPI_LOCAL;
+const contactApiBaseUrl = import.meta.env.VITE_CONTACTAPI_PRODURL || 'https://api-growwth-prod.growwthpartners.in'
 
 const getContactEndpoint = `${contactApiBaseUrl}/api/contact-growwth`
 
