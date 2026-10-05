@@ -6,7 +6,7 @@ export type ContactFormPayload = {
   serviceLookingFor: string | 'new prtcfo page';
   message: FormDataEntryValue | null
 }
-// const contactApiBaseUrl = 'http://localhost:8081/'
+
 const contactApiBaseUrl = import.meta.env.VITE_CONTACTAPI_PRODURL || 'https://api-growwth-prod.growwthpartners.in'
 
 const getContactEndpoint = `${contactApiBaseUrl}/api/contact-growwth`
